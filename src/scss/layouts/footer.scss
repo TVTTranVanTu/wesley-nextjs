@@ -1,0 +1,39 @@
+.footer {
+    .container {
+        .footer-content {
+            height: 80px;
+            align-items: center;
+            padding: 10px 10px;
+            display: flex;
+            justify-content: space-between;
+            .footer-left {
+                p {
+                    color: #f8f8f8;
+                }
+            }
+            .footer-right {
+                align-items: center;
+                .list-icon {
+                    display: flex;
+                    li {
+                        cursor: pointer;
+                        color: #f8f8f8;
+                        padding: 15px 25px;
+                        i {
+                            padding-right: 5px;
+                            transition: all 0.2s ease;
+                            font-size: 20px;
+                        }
+                        a {
+                            text-transform: capitalize;
+                            color: #f8f8f8;
+                        }
+                        a:hover {
+                            color: #d966ff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

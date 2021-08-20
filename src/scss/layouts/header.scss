@@ -1,0 +1,93 @@
+.header {
+    .container {
+        .header-content {
+            height: 80px;
+            align-items: center;
+            padding: 10px 10px;
+            display: flex;
+            justify-content: space-between;
+            .header-left {
+                display: flex;
+                cursor: pointer;
+                img {
+                    width: 50px;
+                }
+                h2 {
+                    font-family: "Quicksand", sans-serif;
+                    font-size: 20px;
+                    margin: 0;
+                    padding: 0;
+                    margin-top: 5px;
+                    color: #f8f8f8;
+                    margin-left: 5px;
+                }
+            }
+            .header-right {
+                align-items: center;
+                .list-menu {
+                    display: flex;
+                    li {
+                        cursor: pointer;
+                        color: #f8f8f8;
+                        padding: 15px 25px;
+                        position: relative;
+                        i {
+                            padding-right: 5px;
+                            transition: all 0.5s ease;
+                        }
+                        a {
+                            text-transform: capitalize;
+                            color: #f8f8f8;
+                        }
+                        a:hover {
+                            color: #d966ff;
+                        }
+                        .dropdown__box {
+                            width: 200px;
+                            display: none;
+                            position: absolute;
+                            left: -45px;
+                            z-index: 4;
+                            background: #000;
+                            border-top: 2px solid #d966ff;
+                            opacity: 0.8;
+                            margin-top: 15px;
+                            li {
+                                border: 0;
+                                float: none;
+                                position: relative;
+                                display: block;
+                                padding: 5px 10px;
+                                a {
+                                    border: 0 !important;
+                                    position: relative;
+                                    background: transparent;
+                                    color: #f8f8f8;
+                                    border-radius: 0 !important;
+                                    font-size: 14px;
+                                    font-weight: 400;
+                                    text-transform: capitalize;
+                                    padding: 5px 35px;
+                                    display: block;
+                                    letter-spacing: 0.07em;
+                                    line-height: 1.9;
+                                }
+                            }
+                            li:hover {
+                                background: rgb(14, 13, 13);
+                                a {
+                                    color: #d966ff;
+                                }
+                            }
+                        }
+                    }
+                    li:hover {
+                        .dropdown__box {
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
